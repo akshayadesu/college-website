@@ -14,43 +14,36 @@
     margin-left: -90px;
     padding-right: 30px;
 }
-
 .main-container {
     display: grid;
     grid-template-columns: 3fr 9fr;
 
 }
-
 .clg-logo {
     padding-left: 20px;
     padding-top: 10px;
     height: 100px;
 }
-
 .about-content {
     border: 1px solid #ccc;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
 }
-
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 11fr;
 }
-
 .back-logo {
     padding-top: 20px;
     padding-left: 30px;
 }
-
 .contact-box {
     border: 1px solid #ccc;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
 }
-
 
 .dropdown {
     position: relative;
@@ -118,6 +111,54 @@
     margin-top: -30px;
 }
 
+.login-box{
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 500px;
+    height: 200px;
+    align-items: center;
+}
 
+/* Add this CSS to your global.css or a specific CSS file */
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Sidebar is hidden initially */
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f4;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transition: right 0.3s ease; /* Smooth transition */
+    padding-top: 20px;
+}
 
+.sidebar.active {
+    left: 0; 
+}
+
+.sidebar button {
+    display: block;
+    margin: 10px auto;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.sidebar-head{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.selected-branch{
+   color: white;
+   right:0;
+}
