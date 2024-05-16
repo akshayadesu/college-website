@@ -38,7 +38,7 @@ const AboutPage = () => {
 
           <ul>
             <li>We strive for excellence in all that we do in order to model success for our students</li>
-            <li>We focus on students' success and satisfaction and meeting the needs of the community</li>
+            <li>We focus on students success and satisfaction and meeting the needs of the community</li>
             <li>We take pride in the quality of our organization and work, and we value, originality, integrity, consistency, and attention to detail</li>
             <li>We stay abreast of ever-changing youth culture, emerging communication technologies and design trends</li>
             <li>We create an innovative environment for students and staff to develop an integrated personality</li>
