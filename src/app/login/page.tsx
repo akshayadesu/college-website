@@ -6,14 +6,14 @@ const Login = () => {
     const [uname, setUname] = useState('')
     const [pass, setPass] = useState('')
     const [valid, setValid] = useState(false);
-    const handleUname = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setUname(e.target.value);
+    const handleUname = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setUname(event.target.value);
     }
-    const handlePassword = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setPass(e.target.value);
+    const handlePassword = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setPass(event.target.value);
     }
-    const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
-        e.preventDefault();
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
         if (uname.length >0 && pass.length > 0) {
             setValid(true);
             console.log(uname);
@@ -21,7 +21,6 @@ const Login = () => {
         }
         else {
             setValid(false);
-           
         }
     }
     return (

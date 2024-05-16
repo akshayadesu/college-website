@@ -5,8 +5,16 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 export default function Navbar() {
     const [sidebar, setSidebar] = useState(false);
+    const [selectedOption, setSelectedOption] = useState<string | null>(null);
     const handleSidebar = () => {
         setSidebar(!sidebar);
+        if (!sidebar) {
+            setSelectedOption(null); 
+        }
+    }
+    const handleOptionClick = (option: string) => {
+        setSelectedOption(option);
+        setSidebar(false);
     }
     return (
         <>
@@ -45,11 +53,16 @@ export default function Navbar() {
                         </button>
                     </div>
                     <ul >
-                        <li >Bhimavaram</li>
-                        <li >Hyderabad</li>
+                        <li onClick={() => handleOptionClick("HYDERABAD")} >Hyderabad</li>
+                        <li onClick={() => handleOptionClick("BHIMAVARAM")}>Bhimavaram</li>
                     </ul>
                 </div>
             }
+            {selectedOption && (
+                <div className={`selected-option ${selectedOption === 'BHIMAVARAM' ? 'green' : selectedOption === 'HYDERABAD' ? 'blue' : ''}`} >
+                    <center>{selectedOption}</center>
+                </div>
+            )}
         </>
 
     )

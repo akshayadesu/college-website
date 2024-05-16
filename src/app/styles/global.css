@@ -121,17 +121,15 @@
     align-items: center;
 }
 
-/* Add this CSS to your global.css or a specific CSS file */
-
 .sidebar {
     position: fixed;
     top: 0;
-    right: -250px; /* Sidebar is hidden initially */
+    right: -250px; 
     width: 250px;
     height: 100%;
     background-color: #f4f4f4;
     box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-    transition: right 0.3s ease; /* Smooth transition */
+    transition: right 0.3s ease; 
     padding-top: 20px;
 }
 
@@ -158,7 +156,29 @@
     grid-template-columns: 3fr 1fr;
 }
 
-.selected-branch{
-   color: white;
-   right:0;
+
+
+.selected-option {
+    padding: 10px;
+    margin-top: 70px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    height: 150px;
+    width: 150px;
+    align-content: center;
+    border-radius: 20px;
+}
+
+
+.selected-option.green {
+    background-color: rgb(13, 226, 13);
+    color: white;
+}
+
+
+.selected-option.blue {
+    background-color: blue;
+    color: white;
 }
