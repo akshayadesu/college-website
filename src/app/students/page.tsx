@@ -1,10 +1,11 @@
 'use client';
+import { Student } from './types'; 
 import React, { useEffect, useState } from "react";
 import Link from 'next/link';
 import axios from "axios";
 import { IoArrowBackCircle } from "react-icons/io5";
 const StudentDetails = () => {
-    const [students, setStudents] = useState([]);
+    const [students, setStudents] = useState<Student[]>([]);
     useEffect(() => {
         axios.get('http://localhost:3003/students')
             .then((response) => {
