@@ -1,8 +1,10 @@
 'use client';
+import { useRouter } from 'next/navigation'
 import React, { useState } from "react";
 import Link from 'next/link';
 import { IoArrowBackCircle } from "react-icons/io5";
 const Login = () => {
+    const router = useRouter()
     const [uname, setUname] = useState('')
     const [pass, setPass] = useState('')
     const [valid, setValid] = useState(false);
@@ -18,6 +20,7 @@ const Login = () => {
             setValid(true);
             console.log(uname);
             console.log(pass);
+            router.push('/')
         }
         else {
             setValid(false);

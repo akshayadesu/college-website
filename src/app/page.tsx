@@ -5,6 +5,7 @@ export default function Home() {
     return (
         <>
             <div className="home-page">
+                {/* <div style={{backgroundColor:'violet'}} className='user-details'>User details</div> */}
                 <div><img src="svesimg.jpg" alt="clg-image" style={{ width: '900px', height: '500px' }} /></div>
                 <div className='side-content1'>
                     <div className='one' style={{ backgroundColor: 'orange', }}>

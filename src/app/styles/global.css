@@ -44,16 +44,13 @@
     background-color: #f9f9f9;
     border-radius: 8px;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -64,37 +61,30 @@
     z-index: 1;
     margin-left: -200px;
 }
-
 .dropdown-content ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
 .dropdown-content li {
     padding: 8px 0;
     border-bottom: 1px solid #ddd; 
 }
-
 .dropdown-content li:last-child {
     border-bottom: none; 
 }
-
 .dropdown-content li:hover {
     background-color: #f0f0f0; 
 }
-
 .home-page{
     display: grid;
     grid-template-columns: 9fr 3fr;
 }
-
 .side-content1 {
     display: grid;
     grid-template-rows: auto auto;
     grid-gap: 10px;
 }
-
 .one, .two {
     border-radius: 2px;
     width: 120px;
@@ -102,15 +92,12 @@
     width: 280px;
     height: 180px;
 }
-
 .one{
     margin-top: 15px;
-   
 }
 .two{
     margin-top: -30px;
 }
-
 .login-box{
     border: 1px solid #ccc;
     padding: 20px;
@@ -120,7 +107,6 @@
     height: 200px;
     align-items: center;
 }
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -132,21 +118,17 @@
     transition: right 0.3s ease; 
     padding-top: 20px;
 }
-
 .sidebar.active {
     left: 0; 
 }
-
 .sidebar button {
     display: block;
     margin: 10px auto;
 }
-
 .sidebar ul {
     padding: 0;
     margin: 0;
 }
-
 .sidebar ul li {
     padding: 10px;
     border-bottom: 1px solid #ccc;
@@ -155,9 +137,6 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
-
-
-
 .selected-option {
     padding: 10px;
     margin-top: 70px;
@@ -170,15 +149,45 @@
     align-content: center;
     border-radius: 20px;
 }
-
-
 .selected-option.green {
     background-color: rgb(13, 226, 13);
     color: white;
 }
-
-
 .selected-option.blue {
     background-color: blue;
     color: white;
+}
+.signup-box{
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 800px;
+    height: 420px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.back-box{
+    display: flex;
+   
+}
+
+.students-table {
+    margin-top: 20px;
+}
+
+.students-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.students-table th, .students-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.students-table th {
+    background-color: #f2f2f2;
 }

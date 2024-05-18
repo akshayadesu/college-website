@@ -23,6 +23,8 @@ export default function Navbar() {
                     <img src="vishnulogo2.png" alt="logo" style={{ maxWidth: '70%', height: 'auto', }} />
                 </div>
                 <div className="topnav">
+                    <div><Link href='/'><button style={{ backgroundColor: 'violet', border: 'none', fontSize: '20px' }} >Home</button></Link></div>
+                    <div><Link href='/students'><button style={{ backgroundColor: 'violet', border: 'none', fontSize: '20px' }}>Students</button></Link></div>
                     <div><button style={{ backgroundColor: 'violet', border: 'none', fontSize: '20px' }} onClick={handleSidebar}>Branches</button></div>
                     <div><Link href="/about"><button style={{ backgroundColor: 'violet', border: 'none', fontSize: '20px' }}>AboutUs</button></Link></div>
                     <div><Link href="/contact"><button style={{ backgroundColor: 'violet', border: 'none', fontSize: '20px' }}>ContactUs</button></Link></div>
@@ -42,6 +44,7 @@ export default function Navbar() {
                         </div>
                     </div>
                     <div><Link href="/login"><button style={{ backgroundColor: 'violet', border: 'none', fontSize: '20px' }}>Login</button></Link></div>
+                    <div><Link href="/signup"><button style={{ backgroundColor: 'violet', border: 'none', fontSize: '20px' }}>SignUp</button></Link></div>
                 </div>
             </div>
             {sidebar &&
