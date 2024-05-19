@@ -194,8 +194,6 @@
 
 
 
-/* Add this CSS to your stylesheet or in a <style jsx> block */
-
 .user-grid {
     display: flex;
     flex-wrap: wrap;

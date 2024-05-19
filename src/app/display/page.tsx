@@ -1,10 +1,14 @@
 'use client';
+import { User } from './types';
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import axios from "axios";
 import { IoArrowBackCircle } from "react-icons/io5";
 
-const UserCard = ({ user }) => {
+interface UserCardProps {
+    user: User; 
+}
+const UserCard: React.FC<UserCardProps> = ({ user }) => {
     return (
         <div className="user-card">
             <h2>{user.name}</h2>
@@ -16,7 +20,7 @@ const UserCard = ({ user }) => {
 };
 
 const Display = () => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState<User[]>([]);
 
     useEffect(() => {
         const fetchData = async () => {
