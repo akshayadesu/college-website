@@ -191,3 +191,39 @@
 .students-table th {
     background-color: #f2f2f2;
 }
+
+
+
+/* Add this CSS to your stylesheet or in a <style jsx> block */
+
+.user-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .user-card {
+    background-color: violet;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 250px;
+    text-align: left;
+    color: black;
+    font-family: Arial, sans-serif;
+  }
+  
+  .user-card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+  
+  .user-card p {
+    margin: 8px 0;
+  }
+  
+  
+  
+  

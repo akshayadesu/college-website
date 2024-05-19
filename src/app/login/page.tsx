@@ -20,7 +20,7 @@ const Login = () => {
             setValid(true);
             console.log(uname);
             console.log(pass);
-            router.push('/')
+            router.push('/display');
         }
         else {
             setValid(false);

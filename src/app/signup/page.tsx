@@ -15,7 +15,6 @@ const SignUp = () => {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         console.log(formData);
-
         axios.post('http://localhost:3003/signup', { formData })
             .then((result) => {
                 const data = result.data;
